@@ -6,10 +6,16 @@ import Reset from "./Reset";
 
 function TipCalculator() {
   const [bill, setBill] = useState("");
-  const [tip1, setTip1] = useState("");
-  const [tip2, setTip2] = useState("");
+  const [tip1, setTip1] = useState(0);
+  const [tip2, setTip2] = useState(0);
 
   const tipCalculation = bill * ((tip1 + tip2) / 2 / 100);
+
+  function handleReset() {
+    setBill("");
+    setTip1(0);
+    setTip2(0);
+  }
 
   return (
     <div>
@@ -26,7 +32,7 @@ function TipCalculator() {
 
       <Output bill={bill} totalTip={tipCalculation} />
 
-      <Reset />
+      <Reset onReset={handleReset} />
     </div>
   );
 }
