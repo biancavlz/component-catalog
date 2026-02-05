@@ -1,8 +1,10 @@
 function BillInput() {
   return (
     <div>
-      How much is the bill?
-      <input type="text" />
+      <label>
+        How much is the bill?
+        <input type="text" placeholder="Bill amount" />
+      </label>
     </div>
   );
 }

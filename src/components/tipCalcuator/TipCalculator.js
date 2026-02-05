@@ -10,8 +10,8 @@ function TipCalculator() {
 
       <BillInput />
 
-      <SelectPercentage />
-      <SelectPercentage />
+      <SelectPercentage>how did you liked the service?</SelectPercentage>
+      <SelectPercentage>how did you friend liked the service?</SelectPercentage>
 
       <Output />
 
