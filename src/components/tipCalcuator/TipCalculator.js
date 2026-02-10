@@ -19,8 +19,6 @@ function TipCalculator() {
 
   return (
     <div>
-      <h2>Tip Calculator</h2>
-
       <BillInput bill={bill} onSetBill={setBill} />
 
       <SelectPercentage tip={tip1} onSetTip={setTip1}>

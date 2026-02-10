@@ -1,12 +1,5 @@
 import { useState } from "react";
 
-const container = {
-  padding: "10px",
-  border: "1px solid #ccc",
-  borderRadius: "7px",
-  backgroundColor: "#f7f7f7",
-};
-
 export default function TextExpander({
   collapsedNumWords = 20,
   expandButtonText = "Show more",
@@ -32,14 +25,11 @@ export default function TextExpander({
     color: buttonColor,
   };
   return (
-    <div>
-      <h2>Expanded Text</h2>
-      <span>
-        {displaytext}{" "}
-        <button style={buttonStyle} onClick={handleOnClick}>
-          {isExpanded ? collapseButtonText : expandButtonText}
-        </button>
-      </span>
-    </div>
+    <span>
+      {displaytext}{" "}
+      <button style={buttonStyle} onClick={handleOnClick}>
+        {isExpanded ? collapseButtonText : expandButtonText}
+      </button>
+    </span>
   );
 }
