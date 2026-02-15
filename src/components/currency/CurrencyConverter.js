@@ -21,6 +21,9 @@ function CurrencyConverter() {
         setConvertedAmount(convertedAmount.toFixed(2));
         setIsLoading(false);
       }
+      if (fromCurrency === toCurrency) {
+        return setConvertedAmount(amount);
+      }
       convert();
     },
     [amount, fromCurrency, toCurrency],
