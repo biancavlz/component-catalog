@@ -2,6 +2,7 @@ import HeaderCard from "./components/HeaderCard";
 import TipCalculator from "./components/tipCalcuator/TipCalculator";
 import Rating from "./components/starRating/Rating";
 import TextExpander from "./components/textExpander/TextExpander";
+import CurrencyConverter from "./components/currency/CurrencyConverter";
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
           stepped foot on the moon or when rovers were sent to roam around on
           Mars.
         </TextExpander>
+      </HeaderCard>
+
+      <HeaderCard text={"Currency Converter"}>
+        <CurrencyConverter />
       </HeaderCard>
     </div>
   );
