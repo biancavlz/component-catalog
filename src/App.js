@@ -3,6 +3,7 @@ import TipCalculator from "./components/tipCalcuator/TipCalculator";
 import Rating from "./components/starRating/Rating";
 import TextExpander from "./components/textExpander/TextExpander";
 import CurrencyConverter from "./components/currency/CurrencyConverter";
+import Locator from "./components/geoLocation/Locator";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
 
       <HeaderCard text={"Currency Converter"}>
         <CurrencyConverter />
+      </HeaderCard>
+      <HeaderCard text={"GPS Locator"}>
+        <Locator />
       </HeaderCard>
     </div>
   );
