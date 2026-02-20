@@ -4,6 +4,7 @@ import Rating from "./components/starRating/Rating";
 import TextExpander from "./components/textExpander/TextExpander";
 import CurrencyConverter from "./components/currency/CurrencyConverter";
 import Locator from "./components/geoLocation/Locator";
+import DateCounter from "./components/counter/DateCounter";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
       </HeaderCard>
       <HeaderCard text={"GPS Locator"}>
         <Locator />
+      </HeaderCard>
+      <HeaderCard text={"Date Counter"}>
+        <DateCounter />
       </HeaderCard>
     </div>
   );
