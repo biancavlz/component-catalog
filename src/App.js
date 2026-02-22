@@ -5,6 +5,7 @@ import TextExpander from "./components/textExpander/TextExpander";
 import CurrencyConverter from "./components/currency/CurrencyConverter";
 import Locator from "./components/geoLocation/Locator";
 import DateCounter from "./components/counter/DateCounter";
+import BankAccount from "./components/bankAccount/BankAccount";
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
       </HeaderCard>
       <HeaderCard text={"Date Counter"}>
         <DateCounter />
+      </HeaderCard>
+
+      <HeaderCard text={"Date Counter"}>
+        <BankAccount />
       </HeaderCard>
     </div>
   );
