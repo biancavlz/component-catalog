@@ -6,6 +6,7 @@ import CurrencyConverter from "./components/currency/CurrencyConverter";
 import Locator from "./components/geoLocation/Locator";
 import DateCounter from "./components/counter/DateCounter";
 import BankAccount from "./components/bankAccount/BankAccount";
+import Accordion from "./components/compoundComponents/accordion/Accordion";
 
 function App() {
   return (
@@ -51,6 +52,29 @@ function App() {
 
       <HeaderCard text={"Date Counter"}>
         <BankAccount />
+      </HeaderCard>
+
+      <HeaderCard text={"Compound Component"}>
+        <h3>Accordion</h3>
+
+        <Accordion>
+          <Accordion.Item index={0}>
+            <Accordion.Header index={0}>Example tab</Accordion.Header>
+            <Accordion.Content index={0}>This is the content</Accordion.Content>
+          </Accordion.Item>
+          <Accordion.Item index={1}>
+            <Accordion.Header index={1}>Example tab 2</Accordion.Header>
+            <Accordion.Content index={1}>
+              This is the content 2
+            </Accordion.Content>
+          </Accordion.Item>
+          <Accordion.Item index={2}>
+            <Accordion.Header index={2}>Example tab 3</Accordion.Header>
+            <Accordion.Content index={2}>
+              This is the content 3
+            </Accordion.Content>
+          </Accordion.Item>
+        </Accordion>
       </HeaderCard>
     </div>
   );
