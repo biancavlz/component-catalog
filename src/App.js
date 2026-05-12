@@ -7,6 +7,8 @@ import Locator from "./components/geoLocation/Locator";
 import DateCounter from "./components/counter/DateCounter";
 import BankAccount from "./components/bankAccount/BankAccount";
 import Accordion from "./components/compoundComponents/accordion/Accordion";
+import DarkModeButton from "./components/darkModeButton/DarkModeButton";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   return (
@@ -76,6 +78,12 @@ function App() {
           </Accordion.Item>
         </Accordion>
       </HeaderCard>
+
+      <DarkModeProvider>
+        <HeaderCard text={"Context"}>
+          <DarkModeButton />
+        </HeaderCard>
+      </DarkModeProvider>
     </div>
   );
 }
