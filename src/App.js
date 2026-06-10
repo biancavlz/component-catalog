@@ -20,6 +20,7 @@ import Steps from "./components/hooks/useState/Steps";
 import Visibility from "./components/hooks/useState/Visibility";
 import ApiCall from "./components/hooks/useEffect/ApiCall";
 import CountTimer from "./components/hooks/useEffect/CountTimer";
+import SearchTerm from "./components/hooks/useEffect/SearchTerms";
 
 function App() {
   return (
@@ -129,12 +130,16 @@ function App() {
 
       <section>
         <h1>useEffect hook</h1>
-        <HeaderCard text={"Api Call"}>
+        <HeaderCard text={"Fetch data - API Call"}>
           <ApiCall />
         </HeaderCard>
 
-        <HeaderCard text={"Count with timer"}>
+        <HeaderCard text={"Count with timer - Interval/timeout"}>
           <CountTimer />
+        </HeaderCard>
+
+        <HeaderCard text={"Search term - API call"}>
+          <SearchTerm query={3} />
         </HeaderCard>
       </section>
     </div>
