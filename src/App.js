@@ -9,6 +9,15 @@ import BankAccount from "./components/bankAccount/BankAccount";
 import Accordion from "./components/compoundComponents/accordion/Accordion";
 import DarkModeButton from "./components/darkModeButton/DarkModeButton";
 import { DarkModeProvider } from "./context/DarkModeContext";
+import Todo from "./components/Reducers/Todo";
+import InterviewPrep from "./components/interview/InterviewPrep";
+import Count from "./components/hooks/useState/Count";
+import DarkMode from "./components/hooks/useState/DarkMode";
+import SimpleForm from "./components/hooks/useState/SimpleForm";
+import TodoList from "./components/hooks/useState/TodoList";
+import UserProfileForm from "./components/hooks/useState/UserProfileForm";
+import Steps from "./components/hooks/useState/Steps";
+import Visibility from "./components/hooks/useState/Visibility";
 
 function App() {
   return (
@@ -84,6 +93,37 @@ function App() {
           <DarkModeButton />
         </HeaderCard>
       </DarkModeProvider>
+
+      <section>
+        <h1>useState hook</h1>
+
+        <HeaderCard text={"Counter"}>
+          <Count />
+        </HeaderCard>
+
+        <HeaderCard text={"DarkMode"}>
+          <DarkMode />
+        </HeaderCard>
+
+        <HeaderCard text={"Simple Form"}>
+          <SimpleForm />
+        </HeaderCard>
+        <HeaderCard text={"Todo list - array manipulation"}>
+          <TodoList />
+        </HeaderCard>
+
+        <HeaderCard text={"User Profile form - object manipulation"}>
+          <UserProfileForm />
+        </HeaderCard>
+
+        <HeaderCard text={"Steps - PrevState"}>
+          <Steps />
+        </HeaderCard>
+
+        <HeaderCard text={"Visibility"}>
+          <Visibility />
+        </HeaderCard>
+      </section>
     </div>
   );
 }
