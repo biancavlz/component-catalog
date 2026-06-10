@@ -19,6 +19,7 @@ import UserProfileForm from "./components/hooks/useState/UserProfileForm";
 import Steps from "./components/hooks/useState/Steps";
 import Visibility from "./components/hooks/useState/Visibility";
 import ApiCall from "./components/hooks/useEffect/ApiCall";
+import CountTimer from "./components/hooks/useEffect/CountTimer";
 
 function App() {
   return (
@@ -130,6 +131,10 @@ function App() {
         <h1>useEffect hook</h1>
         <HeaderCard text={"Api Call"}>
           <ApiCall />
+        </HeaderCard>
+
+        <HeaderCard text={"Count with timer"}>
+          <CountTimer />
         </HeaderCard>
       </section>
     </div>
