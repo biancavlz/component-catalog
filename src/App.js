@@ -18,6 +18,7 @@ import TodoList from "./components/hooks/useState/TodoList";
 import UserProfileForm from "./components/hooks/useState/UserProfileForm";
 import Steps from "./components/hooks/useState/Steps";
 import Visibility from "./components/hooks/useState/Visibility";
+import ApiCall from "./components/hooks/useEffect/ApiCall";
 
 function App() {
   return (
@@ -122,6 +123,13 @@ function App() {
 
         <HeaderCard text={"Visibility"}>
           <Visibility />
+        </HeaderCard>
+      </section>
+
+      <section>
+        <h1>useEffect hook</h1>
+        <HeaderCard text={"Api Call"}>
+          <ApiCall />
         </HeaderCard>
       </section>
     </div>
