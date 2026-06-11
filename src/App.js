@@ -21,6 +21,7 @@ import Visibility from "./components/hooks/useState/Visibility";
 import ApiCall from "./components/hooks/useEffect/ApiCall";
 import CountTimer from "./components/hooks/useEffect/CountTimer";
 import SearchTerm from "./components/hooks/useEffect/SearchTerms";
+import ResizeWindow from "./components/hooks/useEffect/ResizeWindow";
 
 function App() {
   return (
@@ -130,16 +131,20 @@ function App() {
 
       <section>
         <h1>useEffect hook</h1>
-        <HeaderCard text={"Fetch data - API Call"}>
+        <HeaderCard text={"Fetch data - API call"}>
           <ApiCall />
-        </HeaderCard>
-
-        <HeaderCard text={"Count with timer - Interval/timeout"}>
-          <CountTimer />
         </HeaderCard>
 
         <HeaderCard text={"Search term - API call"}>
           <SearchTerm query={3} />
+        </HeaderCard>
+
+        <HeaderCard text={"Count with timer - Interval/Timeout"}>
+          <CountTimer />
+        </HeaderCard>
+
+        <HeaderCard text={"Resize Window - Event listener"}>
+          <ResizeWindow />
         </HeaderCard>
       </section>
     </div>
