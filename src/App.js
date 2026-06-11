@@ -23,6 +23,7 @@ import CountTimer from "./components/hooks/useEffect/CountTimer";
 import SearchTerm from "./components/hooks/useEffect/SearchTerms";
 import ResizeWindow from "./components/hooks/useEffect/ResizeWindow";
 import PullApiCall from "./components/hooks/useEffect/PullApiCall";
+import ApiCallWithProps from "./components/hooks/useEffect/ApiCallWithProps";
 import LocalStorageName from "./components/hooks/useEffect/LocalStorageName";
 
 function App() {
@@ -135,6 +136,10 @@ function App() {
         <h1>useEffect hook</h1>
         <HeaderCard text={"Fetch data - API call"}>
           <ApiCall />
+        </HeaderCard>
+
+        <HeaderCard text={"Fetch data with props - API call"}>
+          <ApiCallWithProps postId={1} />
         </HeaderCard>
 
         <HeaderCard text={"Search term - API call"}>
