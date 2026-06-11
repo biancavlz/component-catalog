@@ -22,6 +22,7 @@ import ApiCall from "./components/hooks/useEffect/ApiCall";
 import CountTimer from "./components/hooks/useEffect/CountTimer";
 import SearchTerm from "./components/hooks/useEffect/SearchTerms";
 import ResizeWindow from "./components/hooks/useEffect/ResizeWindow";
+import PullApiCall from "./components/hooks/useEffect/PullApiCall";
 
 function App() {
   return (
@@ -145,6 +146,9 @@ function App() {
 
         <HeaderCard text={"Resize Window - Event listener"}>
           <ResizeWindow />
+        </HeaderCard>
+        <HeaderCard text={"Pull data every 5 minutes - Interval/call API"}>
+          <PullApiCall />
         </HeaderCard>
       </section>
     </div>
