@@ -26,6 +26,7 @@ import PullApiCall from "./components/hooks/useEffect/PullApiCall";
 import ApiCallWithProps from "./components/hooks/useEffect/ApiCallWithProps";
 import LocalStorageName from "./components/hooks/useEffect/LocalStorageName";
 import MessageByCondition from "./components/hooks/useEffect/MessageByCondition";
+import UserProfile from "./components/hooks/useEffect/UserProfile";
 
 function App() {
   return (
@@ -164,6 +165,10 @@ function App() {
 
         <HeaderCard text={"Display Message by Condition"}>
           <MessageByCondition />
+        </HeaderCard>
+
+        <HeaderCard text={"User Profile"}>
+          <UserProfile userId={1} />
         </HeaderCard>
       </section>
     </div>
