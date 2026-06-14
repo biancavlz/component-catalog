@@ -25,6 +25,7 @@ import ResizeWindow from "./components/hooks/useEffect/ResizeWindow";
 import PullApiCall from "./components/hooks/useEffect/PullApiCall";
 import ApiCallWithProps from "./components/hooks/useEffect/ApiCallWithProps";
 import LocalStorageName from "./components/hooks/useEffect/LocalStorageName";
+import MessageByCondition from "./components/hooks/useEffect/MessageByCondition";
 
 function App() {
   return (
@@ -159,6 +160,10 @@ function App() {
 
         <HeaderCard text={"LocalStorage"}>
           <LocalStorageName />
+        </HeaderCard>
+
+        <HeaderCard text={"Display Message by Condition"}>
+          <MessageByCondition />
         </HeaderCard>
       </section>
     </div>
