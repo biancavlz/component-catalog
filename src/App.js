@@ -27,6 +27,7 @@ import ApiCallWithProps from "./components/hooks/useEffect/ApiCallWithProps";
 import LocalStorageName from "./components/hooks/useEffect/LocalStorageName";
 import MessageByCondition from "./components/hooks/useEffect/MessageByCondition";
 import UserProfile from "./components/hooks/useEffect/UserProfile";
+import CountDownTimer from "./components/hooks/useEffect/CountDownTimer";
 
 function App() {
   return (
@@ -169,6 +170,10 @@ function App() {
 
         <HeaderCard text={"User Profile"}>
           <UserProfile userId={1} />
+        </HeaderCard>
+
+        <HeaderCard text={"Count down timer"}>
+          <CountDownTimer initialCount={10} />
         </HeaderCard>
       </section>
     </div>
