@@ -28,6 +28,7 @@ import LocalStorageName from "./components/hooks/useEffect/LocalStorageName";
 import MessageByCondition from "./components/hooks/useEffect/MessageByCondition";
 import UserProfile from "./components/hooks/useEffect/UserProfile";
 import CountDownTimer from "./components/hooks/useEffect/CountDownTimer";
+import PaginatedData from "./components/hooks/useEffect/PaginatedData";
 
 function App() {
   return (
@@ -174,6 +175,9 @@ function App() {
 
         <HeaderCard text={"Count down timer"}>
           <CountDownTimer initialCount={10} />
+        </HeaderCard>
+        <HeaderCard text={"Pagination - API call"}>
+          <PaginatedData />
         </HeaderCard>
       </section>
     </div>
