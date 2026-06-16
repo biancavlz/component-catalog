@@ -30,6 +30,7 @@ import UserProfile from "./components/hooks/useEffect/UserProfile";
 import CountDownTimer from "./components/hooks/useEffect/CountDownTimer";
 import PaginatedData from "./components/hooks/useEffect/PaginatedData";
 import Theme from "./components/hooks/useContext/Theme";
+import UserAuthenticationProfile from "./components/hooks/useContext/UserAuthenticationProfile";
 
 function App() {
   return (
@@ -186,6 +187,9 @@ function App() {
         <h1>useContext hook</h1>
         <HeaderCard text={"Theming"}>
           <Theme />
+        </HeaderCard>
+        <HeaderCard text={"User Authentication Profile"}>
+          <UserAuthenticationProfile />
         </HeaderCard>
       </section>
     </div>
