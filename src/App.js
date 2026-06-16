@@ -31,6 +31,7 @@ import CountDownTimer from "./components/hooks/useEffect/CountDownTimer";
 import PaginatedData from "./components/hooks/useEffect/PaginatedData";
 import Theme from "./components/hooks/useContext/Theme";
 import UserAuthenticationProfile from "./components/hooks/useContext/UserAuthenticationProfile";
+import LanguageSelector from "./components/hooks/useContext/LanguageSelector";
 
 function App() {
   return (
@@ -190,6 +191,9 @@ function App() {
         </HeaderCard>
         <HeaderCard text={"User Authentication Profile"}>
           <UserAuthenticationProfile />
+        </HeaderCard>
+        <HeaderCard text={"Language Selector"}>
+          <LanguageSelector />
         </HeaderCard>
       </section>
     </div>
