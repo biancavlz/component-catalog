@@ -29,6 +29,7 @@ import MessageByCondition from "./components/hooks/useEffect/MessageByCondition"
 import UserProfile from "./components/hooks/useEffect/UserProfile";
 import CountDownTimer from "./components/hooks/useEffect/CountDownTimer";
 import PaginatedData from "./components/hooks/useEffect/PaginatedData";
+import Theme from "./components/hooks/useContext/Theme";
 
 function App() {
   return (
@@ -178,6 +179,13 @@ function App() {
         </HeaderCard>
         <HeaderCard text={"Pagination - API call"}>
           <PaginatedData />
+        </HeaderCard>
+      </section>
+
+      <section>
+        <h1>useContext hook</h1>
+        <HeaderCard text={"Theming"}>
+          <Theme />
         </HeaderCard>
       </section>
     </div>
