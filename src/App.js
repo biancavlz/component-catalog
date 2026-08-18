@@ -34,6 +34,7 @@ import UserAuthenticationProfile from "./components/hooks/useContext/UserAuthent
 import LanguageSelector from "./components/hooks/useContext/LanguageSelector";
 import ShoppingCart from "./components/hooks/useContext/ShoppingCart";
 import BankAccountReducer from "./components/Reducers/bankAccountReducer";
+import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
 
 function App() {
   return (
@@ -206,6 +207,10 @@ function App() {
         <h1>useReducer hook</h1>
         <HeaderCard text={"Bank Account"}>
           <BankAccountReducer />
+        </HeaderCard>
+
+        <HeaderCard text={"Shipping Cart"}>
+          <ShoppingCartReducer />
         </HeaderCard>
       </section>
     </div>
