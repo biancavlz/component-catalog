@@ -35,6 +35,7 @@ import LanguageSelector from "./components/hooks/useContext/LanguageSelector";
 import ShoppingCart from "./components/hooks/useContext/ShoppingCart";
 import BankAccountReducer from "./components/Reducers/bankAccountReducer";
 import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
+import TodoListReducer from "./components/Reducers/TodoListReducer";
 
 function App() {
   return (
@@ -211,6 +212,10 @@ function App() {
 
         <HeaderCard text={"Shipping Cart"}>
           <ShoppingCartReducer />
+        </HeaderCard>
+
+        <HeaderCard text={"To-do list"}>
+          <TodoListReducer />
         </HeaderCard>
       </section>
     </div>
