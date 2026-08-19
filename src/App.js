@@ -36,6 +36,7 @@ import ShoppingCart from "./components/hooks/useContext/ShoppingCart";
 import BankAccountReducer from "./components/Reducers/bankAccountReducer";
 import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
 import TodoListReducer from "./components/Reducers/TodoListReducer";
+import LoginFormReducer from "./components/Reducers/LoginFormReducer";
 
 function App() {
   return (
@@ -216,6 +217,9 @@ function App() {
 
         <HeaderCard text={"To-do list"}>
           <TodoListReducer />
+        </HeaderCard>
+        <HeaderCard text={"Login form submission"}>
+          <LoginFormReducer />
         </HeaderCard>
       </section>
     </div>
