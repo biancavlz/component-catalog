@@ -37,6 +37,7 @@ import BankAccountReducer from "./components/Reducers/bankAccountReducer";
 import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
 import TodoListReducer from "./components/Reducers/TodoListReducer";
 import LoginFormReducer from "./components/Reducers/LoginFormReducer";
+import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
 
 function App() {
   return (
@@ -220,6 +221,10 @@ function App() {
         </HeaderCard>
         <HeaderCard text={"Login form submission"}>
           <LoginFormReducer />
+        </HeaderCard>
+
+        <HeaderCard text={"Theme toggle"}>
+          <ToggleThemeReducer />
         </HeaderCard>
       </section>
     </div>
