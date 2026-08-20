@@ -40,6 +40,7 @@ import LoginFormReducer from "./components/Reducers/LoginFormReducer";
 import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
 import AccordionControlReducer from "./components/Reducers/AccordionControlReducer";
 import StepWizardReducer from "./components/Reducers/StepWizard";
+import RegistrationWizardReducer from "./components/Reducers/RegistrationWizardReducer";
 
 function App() {
   return (
@@ -231,8 +232,11 @@ function App() {
         <HeaderCard text={"Accordion control"}>
           <AccordionControlReducer />
         </HeaderCard>
-        <HeaderCard text={"Step wizar"}>
+        <HeaderCard text={"Step wizard"}>
           <StepWizardReducer />
+        </HeaderCard>
+        <HeaderCard text={"Registration wizard"}>
+          <RegistrationWizardReducer />
         </HeaderCard>
       </section>
     </div>
