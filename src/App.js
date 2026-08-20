@@ -38,6 +38,7 @@ import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
 import TodoListReducer from "./components/Reducers/TodoListReducer";
 import LoginFormReducer from "./components/Reducers/LoginFormReducer";
 import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
+import AccordionControlReducer from "./components/Reducers/AccordionControlReducer";
 
 function App() {
   return (
@@ -225,6 +226,9 @@ function App() {
 
         <HeaderCard text={"Theme toggle"}>
           <ToggleThemeReducer />
+        </HeaderCard>
+        <HeaderCard text={"Accordion control"}>
+          <AccordionControlReducer />
         </HeaderCard>
       </section>
     </div>
