@@ -39,6 +39,7 @@ import TodoListReducer from "./components/Reducers/TodoListReducer";
 import LoginFormReducer from "./components/Reducers/LoginFormReducer";
 import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
 import AccordionControlReducer from "./components/Reducers/AccordionControlReducer";
+import StepWizardReducer from "./components/Reducers/StepWizard";
 
 function App() {
   return (
@@ -229,6 +230,9 @@ function App() {
         </HeaderCard>
         <HeaderCard text={"Accordion control"}>
           <AccordionControlReducer />
+        </HeaderCard>
+        <HeaderCard text={"Step wizar"}>
+          <StepWizardReducer />
         </HeaderCard>
       </section>
     </div>
