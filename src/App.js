@@ -9,8 +9,6 @@ import BankAccount from "./components/bankAccount/BankAccount";
 import Accordion from "./components/compoundComponents/accordion/Accordion";
 import DarkModeButton from "./components/darkModeButton/DarkModeButton";
 import { DarkModeProvider } from "./context/DarkModeContext";
-import Todo from "./components/Reducers/Todo";
-import InterviewPrep from "./components/interview/InterviewPrep";
 import Count from "./components/hooks/useState/Count";
 import DarkMode from "./components/hooks/useState/DarkMode";
 import SimpleForm from "./components/hooks/useState/SimpleForm";
@@ -41,6 +39,7 @@ import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
 import AccordionControlReducer from "./components/Reducers/AccordionControlReducer";
 import StepWizardReducer from "./components/Reducers/StepWizard";
 import RegistrationWizardReducer from "./components/Reducers/RegistrationWizardReducer";
+import IntineryListReducer from "./components/Reducers/ItineryListReducer";
 
 function App() {
   return (
@@ -237,6 +236,9 @@ function App() {
         </HeaderCard>
         <HeaderCard text={"Registration wizard"}>
           <RegistrationWizardReducer />
+        </HeaderCard>
+        <HeaderCard text={"Itinerary list"}>
+          <IntineryListReducer />
         </HeaderCard>
       </section>
     </div>
