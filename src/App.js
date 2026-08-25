@@ -31,15 +31,15 @@ import Theme from "./components/hooks/useContext/Theme";
 import UserAuthenticationProfile from "./components/hooks/useContext/UserAuthenticationProfile";
 import LanguageSelector from "./components/hooks/useContext/LanguageSelector";
 import ShoppingCart from "./components/hooks/useContext/ShoppingCart";
-import BankAccountReducer from "./components/Reducers/bankAccountReducer";
-import ShoppingCartReducer from "./components/Reducers/ShoppingCartReducer";
-import TodoListReducer from "./components/Reducers/TodoListReducer";
-import LoginFormReducer from "./components/Reducers/LoginFormReducer";
-import ToggleThemeReducer from "./components/Reducers/TogglingThemeReducer";
-import AccordionControlReducer from "./components/Reducers/AccordionControlReducer";
-import StepWizardReducer from "./components/Reducers/StepWizard";
-import RegistrationWizardReducer from "./components/Reducers/RegistrationWizardReducer";
-import IntineryListReducer from "./components/Reducers/ItineryListReducer";
+import BankAccountReducer from "./components/hooks/Reducers/bankAccountReducer";
+import ShoppingCartReducer from "./components/hooks/Reducers/ShoppingCartReducer";
+import TodoListReducer from "./components/hooks/Reducers/TodoListReducer";
+import LoginFormReducer from "./components/hooks/Reducers/LoginFormReducer";
+import ToggleThemeReducer from "./components/hooks/Reducers/TogglingThemeReducer";
+import AccordionControlReducer from "./components/hooks/Reducers/AccordionControlReducer";
+import StepWizardReducer from "./components/hooks/Reducers/StepWizard";
+import RegistrationWizardReducer from "./components/hooks/Reducers/RegistrationWizardReducer";
+import IntineryListReducer from "./components/hooks/Reducers/ItineryListReducer";
 
 function App() {
   return (
