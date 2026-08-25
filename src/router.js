@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Reducers from "./pages/Reducers";
 import NotFound from "./pages/NotFound";
 import Contexts from "./pages/Contexts";
+import UseEffects from "./pages/UseEffects";
+import UseState from "./pages/UseState";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: "/contexts",
         Component: Contexts,
+      },
+      {
+        path: "/use_effects",
+        Component: UseEffects,
+      },
+      {
+        path: "/use_states",
+        Component: UseState,
       },
     ],
   },
