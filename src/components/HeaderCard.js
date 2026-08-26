@@ -19,10 +19,12 @@ function HeaderCard({ text, children, code }) {
     >
       <div>
         <div>
-          <h1>{text}</h1>
-          <button style={{ marginBottom: "10px" }} onClick={handleClick}>
-            See code
-          </button>
+          <h1>
+            {text}{" "}
+            <span>
+              <button onClick={handleClick}>See code</button>
+            </span>
+          </h1>
         </div>
 
         {children}
