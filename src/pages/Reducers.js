@@ -8,39 +8,53 @@ import StepWizardReducer from "../components/hooks/Reducers/StepWizard";
 import RegistrationWizardReducer from "../components/hooks/Reducers/RegistrationWizardReducer";
 import IntineryListReducer from "../components/hooks/Reducers/ItineryListReducer";
 import HeaderCard from "../components/HeaderCard";
+import {
+  accordionControllerCode,
+  bankAccountCode,
+  intineryList,
+  loginFormCode,
+  shoppingCartCode,
+  todoListCode,
+  toggleThemeCode,
+  stepWizardCode,
+  registrationWizardCode,
+} from "../components/hooks/Reducers/codes";
 
 function Reducers() {
   return (
     <section>
       <h1>useReducer hook</h1>
-      <HeaderCard text={"Bank Account"}>
+      <HeaderCard text={"Bank Account"} code={bankAccountCode}>
         <BankAccountReducer />
       </HeaderCard>
 
-      <HeaderCard text={"Shipping Cart"}>
+      <HeaderCard text={"Shipping Cart"} code={shoppingCartCode}>
         <ShoppingCartReducer />
       </HeaderCard>
 
-      <HeaderCard text={"To-do list"}>
+      <HeaderCard text={"To-do list"} code={todoListCode}>
         <TodoListReducer />
       </HeaderCard>
-      <HeaderCard text={"Login form submission"}>
+      <HeaderCard text={"Login form submission"} code={loginFormCode}>
         <LoginFormReducer />
       </HeaderCard>
 
-      <HeaderCard text={"Theme toggle"}>
+      <HeaderCard text={"Theme toggle"} code={toggleThemeCode}>
         <ToggleThemeReducer />
       </HeaderCard>
-      <HeaderCard text={"Accordion control"}>
+      <HeaderCard text={"Accordion control"} code={accordionControllerCode}>
         <AccordionControlReducer />
       </HeaderCard>
-      <HeaderCard text={"Step wizard"}>
+      <HeaderCard text={"Step wizard"} code={stepWizardCode}>
         <StepWizardReducer />
       </HeaderCard>
-      <HeaderCard text={"Registration wizard"}>
+      <HeaderCard
+        text={"Registration wizard"}
+        code={registrationWizardCode}
+      >
         <RegistrationWizardReducer />
       </HeaderCard>
-      <HeaderCard text={"Itinerary list"}>
+      <HeaderCard text={"Itinerary list"} code={intineryList}>
         <IntineryListReducer />
       </HeaderCard>
     </section>
