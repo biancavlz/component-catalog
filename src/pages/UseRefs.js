@@ -1,12 +1,18 @@
 import HeaderCard from "../components/HeaderCard";
+import { focusElement, timer } from "../components/hooks/useRef/codes";
 import FocusElement from "../components/hooks/useRef/FocusElement";
+import Timer from "../components/hooks/useRef/Timer";
 
 function UseRefs() {
   return (
     <section>
       <h1>useRef hook</h1>
-      <HeaderCard text="Focus Input">
+      <HeaderCard text="Focus Input" code={focusElement}>
         <FocusElement />
+      </HeaderCard>
+
+      <HeaderCard text="Timer" code={timer}>
+        <Timer />
       </HeaderCard>
     </section>
   );
