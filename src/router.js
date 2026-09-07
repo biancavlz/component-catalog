@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Contexts from "./pages/Contexts";
 import UseEffects from "./pages/UseEffects";
 import UseState from "./pages/UseState";
+import UseRefs from "./pages/UseRefs";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/use_states",
         Component: UseState,
+      },
+      {
+        path: "/use_refs",
+        Component: UseRefs,
       },
     ],
   },
