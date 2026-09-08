@@ -18,7 +18,11 @@ import {
   toggleThemeCode,
   stepWizardCode,
   registrationWizardCode,
+  counterReducerUndContextAPICode,
 } from "../components/hooks/Reducers/codes";
+import CounterReducerUndContextAPI, {
+  CounterProvider,
+} from "../components/hooks/Reducers/CounterReducerUndContextAPI";
 
 function Reducers() {
   return (
@@ -48,14 +52,16 @@ function Reducers() {
       <HeaderCard text={"Step wizard"} code={stepWizardCode}>
         <StepWizardReducer />
       </HeaderCard>
-      <HeaderCard
-        text={"Registration wizard"}
-        code={registrationWizardCode}
-      >
+      <HeaderCard text={"Registration wizard"} code={registrationWizardCode}>
         <RegistrationWizardReducer />
       </HeaderCard>
       <HeaderCard text={"Itinerary list"} code={intineryList}>
         <IntineryListReducer />
+      </HeaderCard>
+      <HeaderCard text="Counter" code={counterReducerUndContextAPICode}>
+        <CounterProvider>
+          <CounterReducerUndContextAPI />
+        </CounterProvider>
       </HeaderCard>
     </section>
   );
