@@ -1,5 +1,10 @@
 import HeaderCard from "../components/HeaderCard";
-import { focusElement, timer } from "../components/hooks/useRef/codes";
+import {
+  componentRenderTimesCode,
+  focusElement,
+  timer,
+} from "../components/hooks/useRef/codes";
+import ComponentRenderTimes from "../components/hooks/useRef/ComponentRenderTimes";
 import FocusElement from "../components/hooks/useRef/FocusElement";
 import Timer from "../components/hooks/useRef/Timer";
 
@@ -13,6 +18,10 @@ function UseRefs() {
 
       <HeaderCard text="Timer" code={timer}>
         <Timer />
+      </HeaderCard>
+
+      <HeaderCard text="Render component count" code={componentRenderTimesCode}>
+        <ComponentRenderTimes />
       </HeaderCard>
     </section>
   );
