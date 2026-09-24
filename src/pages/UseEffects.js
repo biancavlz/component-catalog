@@ -50,7 +50,10 @@ function UseEffects() {
         <CountTimer />
       </HeaderCard>
 
-      <HeaderCard text={"Resize Window - Event listener"} code={resizeWindowCode}>
+      <HeaderCard
+        text={"Resize Window - Event listener"}
+        code={resizeWindowCode}
+      >
         <ResizeWindow />
       </HeaderCard>
       <HeaderCard
@@ -60,7 +63,7 @@ function UseEffects() {
         <PullApiCall />
       </HeaderCard>
 
-      <HeaderCard text={"LocalStorage"} code={localStorageNameCode}>
+      <HeaderCard text={"LocalStorage - name "} code={localStorageNameCode}>
         <LocalStorageName />
       </HeaderCard>
 
